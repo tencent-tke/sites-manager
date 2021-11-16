@@ -1,0 +1,24 @@
+# permissions for end users to edit nodeunits.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: nodeunit-editor-role
+rules:
+- apiGroups:
+  - site.superedge.io
+  resources:
+  - nodeunits
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - site.superedge.io
+  resources:
+  - nodeunits/status
+  verbs:
+  - get

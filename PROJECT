@@ -1,0 +1,16 @@
+domain: superedge.io
+layout:
+- go.kubebuilder.io/v3
+multigroup: true
+projectName: sites-manager
+repo: attlee-wang/sites-manager
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  domain: superedge.io
+  group: site
+  kind: NodeUnit
+  path: attlee-wang/sites-manager/apis/site/v1
+  version: v1
+version: "3"

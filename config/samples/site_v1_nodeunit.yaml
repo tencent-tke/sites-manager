@@ -1,0 +1,7 @@
+apiVersion: site.superedge.io/v1
+kind: NodeUnit
+metadata:
+  name: nodeunit-sample
+spec:
+  # Add fields here
+  foo: bar
