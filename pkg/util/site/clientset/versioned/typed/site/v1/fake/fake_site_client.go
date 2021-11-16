@@ -31,10 +31,6 @@ func (c *FakeSiteV1) NodeUnits(namespace string) v1.NodeUnitInterface {
 	return &FakeNodeUnits{c, namespace}
 }
 
-func (c *FakeSiteV1) NodeUnitLists(namespace string) v1.NodeUnitListInterface {
-	return &FakeNodeUnitLists{c, namespace}
-}
-
 // RESTClient returns a RESTClient that is used to communicate
 // with API server by this client implementation.
 func (c *FakeSiteV1) RESTClient() rest.Interface {

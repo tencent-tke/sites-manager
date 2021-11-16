@@ -24,11 +24,3 @@ type NodeUnitListerExpansion interface{}
 // NodeUnitNamespaceListerExpansion allows custom methods to be added to
 // NodeUnitNamespaceLister.
 type NodeUnitNamespaceListerExpansion interface{}
-
-// NodeUnitListListerExpansion allows custom methods to be added to
-// NodeUnitListLister.
-type NodeUnitListListerExpansion interface{}
-
-// NodeUnitListNamespaceListerExpansion allows custom methods to be added to
-// NodeUnitListNamespaceLister.
-type NodeUnitListNamespaceListerExpansion interface{}

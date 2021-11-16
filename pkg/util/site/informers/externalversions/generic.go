@@ -54,8 +54,6 @@ func (f *sharedInformerFactory) ForResource(resource schema.GroupVersionResource
 	// Group=site.superedge.io, Version=v1
 	case v1.SchemeGroupVersion.WithResource("nodeunits"):
 		return &genericInformer{resource: resource.GroupResource(), informer: f.Site().V1().NodeUnits().Informer()}, nil
-	case v1.SchemeGroupVersion.WithResource("nodeunitlists"):
-		return &genericInformer{resource: resource.GroupResource(), informer: f.Site().V1().NodeUnitLists().Informer()}, nil
 
 	}
 

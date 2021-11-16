@@ -18,5 +18,3 @@ limitations under the License.
 package v1
 
 type NodeUnitExpansion interface{}
-
-type NodeUnitListExpansion interface{}

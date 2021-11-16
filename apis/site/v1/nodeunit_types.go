@@ -51,7 +51,6 @@ type NodeUnit struct {
 	Status NodeUnitStatus `json:"status,omitempty"`
 }
 
-// +genclient
 //+kubebuilder:object:root=true
 
 // NodeUnitList contains a list of NodeUnit

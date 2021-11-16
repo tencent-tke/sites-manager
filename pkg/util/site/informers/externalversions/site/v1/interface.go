@@ -25,8 +25,6 @@ import (
 type Interface interface {
 	// NodeUnits returns a NodeUnitInformer.
 	NodeUnits() NodeUnitInformer
-	// NodeUnitLists returns a NodeUnitListInformer.
-	NodeUnitLists() NodeUnitListInformer
 }
 
 type version struct {
@@ -43,9 +41,4 @@ func New(f internalinterfaces.SharedInformerFactory, namespace string, tweakList
 // NodeUnits returns a NodeUnitInformer.
 func (v *version) NodeUnits() NodeUnitInformer {
 	return &nodeUnitInformer{factory: v.factory, namespace: v.namespace, tweakListOptions: v.tweakListOptions}
-}
-
-// NodeUnitLists returns a NodeUnitListInformer.
-func (v *version) NodeUnitLists() NodeUnitListInformer {
-	return &nodeUnitListInformer{factory: v.factory, namespace: v.namespace, tweakListOptions: v.tweakListOptions}
 }

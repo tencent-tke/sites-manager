@@ -26,7 +26,6 @@ import (
 type SiteV1Interface interface {
 	RESTClient() rest.Interface
 	NodeUnitsGetter
-	NodeUnitListsGetter
 }
 
 // SiteV1Client is used to interact with features provided by the site.superedge.io group.
@@ -36,10 +35,6 @@ type SiteV1Client struct {
 
 func (c *SiteV1Client) NodeUnits(namespace string) NodeUnitInterface {
 	return newNodeUnits(c, namespace)
-}
-
-func (c *SiteV1Client) NodeUnitLists(namespace string) NodeUnitListInterface {
-	return newNodeUnitLists(c, namespace)
 }
 
 // NewForConfig creates a new SiteV1Client for the given config.
