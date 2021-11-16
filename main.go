@@ -31,7 +31,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/healthz"
 	"sigs.k8s.io/controller-runtime/pkg/log/zap"
 
-	sitev1 "attlee-wang/sites-manager/apis/site/v1"
+	sitev1 "github.com/attlee-wang/sites-manager/apis/site/v1"
 	//+kubebuilder:scaffold:imports
 )
 
